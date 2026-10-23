@@ -2,7 +2,7 @@ require("node:dns").setServers(["1.1.1.1"], ["8.8.8.8"]);
 const express = require('express')
 require('dotenv').config()
 const cors = require('cors');
-const connectDB = require("./config/ConnectDB");
+const connectDB = require("./config/ConnectDB")
 const { userMiddleware, adminMiddleware, vendorMiddleware } = require("./middlewares/roleWiseMiddlewares");
 const app = express()
 app.use(express.json())
